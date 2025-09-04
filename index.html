@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>  
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal-Quiz</title>  
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/fa181f9859.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <div class="quiz-area" id="quiz">
+        <div class="header">
+        <h2 id="heading">GUESS THE ANIMAL!</h2> 
+        </div>
+        <div id="question">
+         <img id= "quiz-image" src="assets/images/background_img.jpg" alt="question-images">
+        </div>
+        <div>
+        <input type="text" id="guess" placeholder="Enter your Answer here">
+        <button id="submit" onclick="checkAnswer()">Submit</button>
+        </div>
+        <div class="result">
+        <p id="result">Result</p>
+        <p id="score">Score: </p>
+        </div>
+        <div class="buttons">        
+        <button id="reload" onclick="reloadQuiz()">Reload <i class="fa-solid fa-rotate-right"></i></button>
+        <button id="next" onclick="nextImage()">Next  <i class="fa-solid fa-arrow-right"></i></i></button>          
+        </div>  
+    </div>
+        <script src="assets/js/script.js"></script>
+</body>
+</html>
